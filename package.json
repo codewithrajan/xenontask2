@@ -1,0 +1,24 @@
+{
+  "name": "tast2",
+  "version": "1.0.0",
+  "description": "\"This is technical task2 for xenonstack\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xenontask2"
+  },
+  "author": "\"Rajan Kumar\"",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "build": "^0.1.4",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.0.3"
+  }
+}

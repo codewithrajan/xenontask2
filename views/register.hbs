@@ -1,0 +1,118 @@
+<!--HTML FILES-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts | E-Commerce Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-------------------------Google Fonts Link Named-Poppins------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--------------------------------------------Rating font cdn Link----------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    {{!-- <div id="preloader"></div>   --}}
+    <!---------------------------------CONTAINER CLASS-------------------------------------->
+    <div class="container">
+        <!-----------------------------NAVBAR-------------------------------->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="login">Login</a></li>
+                    <li><a href="register">SignUp</a></li>
+
+                </ul>
+                <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-------------------------ACCOUNT PAGE------------------------------------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images\Register.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+
+                            <h3 style="color:red; font-size:30px;"><u>Register Here</u></h3>
+                            {{#if messages.error}}
+                            <p style="color: red;">{{messages.error}}</p>
+                            {{/if}}
+                        </div>
+                        <form id="RegForm" action="/register" method="post">
+
+                            <input type="text" name="username" id="inputEmail4" placeholder=" Email or Username"
+                                required>
+
+                            <input type="password" name="password" id="inputPassword4" placeholder="New Password">
+
+                            <input type="password" name="confirmPassword" id="inputPassword"
+                                placeholder="Confirm Password">
+
+                            <button type="submit" class="btn">Register Now</button>
+                            <a href="login">Already a user? <b><u>Login</u></b></a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------FOOTER----------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png">
+                        <img src="./images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo.png">
+                    <p>Our Purpose is to sustainably make the pleasure and benefits of sports Accessible to the Many.
+                    </p>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/profile.php ?id=100007958238731" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/snikku5912/" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/SNikku5912?t=HHMK9rLTPO_3y3ou7y_-AQ&s=09"
+                            class="fa fa-twitter"></a>
+                        <br>
+                        <a href="http://www.linkedin.com/in/niraj-singh-90b220191" class="fa fa-linkedin"></a>
+                        <a href="mailto:snirajsingh678@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://snirajsingh678.github.io/NikkuBoss.github.io/" class="fa fa-google"></a>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; Copyright - Nikku</p>
+        </div>
+    </div>
+    {{!-- <script src="js\script.js"></script> --}}
+</body>
+
+</html>

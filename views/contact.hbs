@@ -1,0 +1,132 @@
+<!--HTML FILES-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-------------------------Google Fonts Link Named-Poppins------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--------------------------------------------Rating font cdn Link----------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    {{!-- <div id="preloader"></div>     --}}
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/index"> <img src="./images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+
+
+
+                <ul id="MenuItems">
+                   {{#if user}}
+                    <li><a href="/contact">Contact</a></li> 
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">SignUp</a></li>
+                   {{else}}
+                    
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/logout">Logout</a></li> 
+                               {{/if}}
+
+                </ul>
+                <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-------------------------ACCOUNT PAGE------------------------------------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images\Login.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="message" style="padding-bottom: 20px; text-align: center;">
+                        <h2 style="color: #ff523b;">Say Hello,👋</h2>
+                        <h4 style="color: darkblue;">We are always here to serve you!</h4>
+                    </div>
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <h3 style="color:green; font-size:25px"><u>Contact Us Form</u></h3>
+                        </div>
+                        <form id="" action="/contact" method="post">
+
+                            <input type="text" name="fullName" id="inputEmail4" placeholder="Enter your Full Name"
+                                required>
+
+                            <input type="tel" id="inputPhone4" name="mobileNumber" placeholder="Enter Mobile Number"
+                                required>
+
+                            <input type="email" id="inputEmail4" name="email" placeholder="name@gmail.com" required>
+
+                            <textarea name="description" placeholder="Text a Message to Us" row="8" required
+                                style="width:260px; ;"></textarea>
+
+                            <input type="submit" class="btn" value="SEND MESSAGE">
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-------------------------------------------------FOOTER------------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png">
+                        <img src="./images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images\logo.png">
+                    <p>Our Purpose is to sustainably make the pleasure and benefits of sports Accessible to the Many.
+                    </p>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="#" target="popup" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <br>
+                        <a href="https://www.linkedin.com/in/rajan-kumar-21b045242/" class="fa fa-linkedin"></a>
+                        <a href="mailto:rajanranjan06254@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://github.com/codewithrajan/" class="fa fa-github"></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; Copyright - Rajan Kumar</p>
+        </div>
+    </div>
+
+    <!---Script for Preloader--->
+    {{!-- <script src="js\script.js"></script> --}}
+
+</body>
+
+</html>
