@@ -9,7 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/node-authentication');
+// mongoose.connect('mongodb://localhost/node-authentication');
+mongoose.connect('mongodb+srv://rajan:fddGgOBLH8BCfLgJ@cluster0.d8girz9.mongodb.net/studentcrudmm?retryWrites=true&w=majority');
  //, {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
